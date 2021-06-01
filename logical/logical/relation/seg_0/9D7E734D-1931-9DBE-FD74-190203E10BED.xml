@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Contractor" directorySegmentName="seg_0" id="9D7E734D-1931-9DBE-FD74-190203E10BED">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:30:54 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<sourcePk>BE70FE6E-D76C-D247-8945-431F672EED4B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>59A6B98E-4509-3C4F-ED93-EBF1926D3669</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2F0472B9-9912-064E-F3BE-9FC3C31D65DC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

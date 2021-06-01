@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cleaning Time" directorySegmentName="seg_0" id="B5ED2BB2-A61B-C4C5-FE34-C9D9E6A9C47C">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:30:15 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<sourcePk>B4D8E136-4941-8EA4-C0EF-E0DCD58B3531</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E09EBAFF-64AA-0600-050B-7216AD0F7032</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2F0472B9-9912-064E-F3BE-9FC3C31D65DC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

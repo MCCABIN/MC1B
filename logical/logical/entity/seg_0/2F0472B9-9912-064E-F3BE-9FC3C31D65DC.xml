@@ -61,54 +61,6 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="StandardCabinCleaningTime" id="1B9D6067-9AFE-7D37-3119-7D07C2914FDB">
-<createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 11:36:12 UTC</createdTime>
-<ownerDesignName>logical</ownerDesignName>
-<engineerTo>
-<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
-<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="First" id="99A356DC-2FB3-5474-2A8A-52A39F5DF2CA">
-<createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 11:36:27 UTC</createdTime>
-<ownerDesignName>logical</ownerDesignName>
-<engineerTo>
-<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
-<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Last" id="9919EEEE-6A26-8626-B3D7-DCC5AF8103F3">
-<createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 11:36:36 UTC</createdTime>
-<ownerDesignName>logical</ownerDesignName>
-<engineerTo>
-<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
-<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ContractRate" id="6BF3B8A4-774C-AA13-E450-08ED2BD99B2D">
-<createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 11:36:43 UTC</createdTime>
-<ownerDesignName>logical</ownerDesignName>
-<engineerTo>
-<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
-<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="ActualCabinCleaningTime" id="3C1A6052-BE9D-0C20-6F62-E7059A0E1D6A">
 <createdBy>KOIF</createdBy>
 <createdTime>2021-06-01 11:36:47 UTC</createdTime>
@@ -144,6 +96,46 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>938A9568-2DCE-105C-F558-B0F0F640AA28</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ResortID1" id="655B9A69-93FB-ECCD-2C95-CD3799A48426">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:30:15 UTC</createdTime>
+<comment><![CDATA[ will hold one id]]></comment>
+<generatorID>B5ED2BB2-A61B-C4C5-FE34-C9D9E6A9C47C</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<referedAttribute>82B09488-BDB1-6B4E-A698-50524D66E85B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CabinNo1" id="FDD4B87A-501C-8DC6-0D95-87981F659CAA">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:30:15 UTC</createdTime>
+<generatorID>B5ED2BB2-A61B-C4C5-FE34-C9D9E6A9C47C</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<referedAttribute>D9BA36C8-5E0E-6993-98A2-31AE5E28BD44</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ContractorNo1" id="26F4F78B-4393-4545-876A-B740E7616189">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:30:54 UTC</createdTime>
+<generatorID>9D7E734D-1931-9DBE-FD74-190203E10BED</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<referedAttribute>0F242343-746E-BA31-EA4E-BBB16FCED211</referedAttribute>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>

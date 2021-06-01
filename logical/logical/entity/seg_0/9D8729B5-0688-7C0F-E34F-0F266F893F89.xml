@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="59A6B98E-4509-3C4F-ED93-EBF1926D3669" name="Contractor">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D8729B5-0688-7C0F-E34F-0F266F893F89" name="ContractorAdress">
 <createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 14:23:52 UTC</createdTime>
+<createdTime>2021-06-01 15:58:14 UTC</createdTime>
 <ownerDesignName>logical</ownerDesignName>
 <engineerTo>
 <item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
@@ -16,9 +16,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ContractorNo" id="0F242343-746E-BA31-EA4E-BBB16FCED211">
+<Attribute name="ContractorNo" id="C79159E5-1B5F-1E90-577D-72E753BB5D61">
 <createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 14:23:52 UTC</createdTime>
+<createdTime>2021-06-01 15:58:14 UTC</createdTime>
 <ownerDesignName>logical</ownerDesignName>
 <engineerTo>
 <item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
@@ -27,45 +27,31 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="First" id="27AEDB91-F659-118A-0753-B49B760B52E5">
+<Attribute name="Street" id="62EB6B50-2729-24C7-FAF8-2F1574F105AA">
 <createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 14:23:52 UTC</createdTime>
+<createdTime>2021-06-01 15:58:14 UTC</createdTime>
 <ownerDesignName>logical</ownerDesignName>
 <engineerTo>
 <item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
 <item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Last" id="B3F3D778-21EE-98C7-5706-976C1484857B">
+<Attribute name="Town" id="0A5ABFCB-021F-933B-5EEA-0A32B7AD3D40">
 <createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 14:23:52 UTC</createdTime>
+<createdTime>2021-06-01 15:58:14 UTC</createdTime>
 <ownerDesignName>logical</ownerDesignName>
 <engineerTo>
 <item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
 <item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ContractRate" id="2B61F47A-9D66-A783-ACB7-88A7256E0B01">
+<Attribute name="PostalCode" id="002243F2-2BC4-091E-E099-3A9CFB1B15FD">
 <createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 14:23:52 UTC</createdTime>
-<ownerDesignName>logical</ownerDesignName>
-<engineerTo>
-<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
-<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="phione" id="499AD9B7-2AF1-A486-62E7-2F85F96DD3F9">
-<createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 16:52:47 UTC</createdTime>
+<createdTime>2021-06-01 15:58:14 UTC</createdTime>
 <ownerDesignName>logical</ownerDesignName>
 <engineerTo>
 <item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
@@ -77,9 +63,9 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="BE70FE6E-D76C-D247-8945-431F672EED4B" name="Cleaning History PK">
+<identifier id="D93AB15C-1DC9-CB56-A74C-E8BB65CEE939" name="ResortAdress PK">
 <createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 14:23:52 UTC</createdTime>
+<createdTime>2021-06-01 15:58:14 UTC</createdTime>
 <ownerDesignName>logical</ownerDesignName>
 <engineerTo>
 <item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
@@ -87,7 +73,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0F242343-746E-BA31-EA4E-BBB16FCED211</attributeRef>
+<attributeRef>C79159E5-1B5F-1E90-577D-72E753BB5D61</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

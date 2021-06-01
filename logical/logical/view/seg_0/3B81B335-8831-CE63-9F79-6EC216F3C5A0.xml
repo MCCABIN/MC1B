@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="3B81B335-8831-CE63-9F79-6EC216F3C5A0" name="CleaningHostoryChargeView">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:45:30 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    cleaninghistory.resortid,
+    cleaninghistory.cabinno,
+    cleaninghistory.datetimecleaned,
+    cleaninghistory.contractorno,
+    cleaninghistory.actualcabincleaningtime,
+    contractor.contractrate,
+    cleaninghistory.datetimecleaned * contractor.contractrate/60 AS CabinCleaningCharge
+FROM
+         cleaninghistory
+    INNER JOIN contractor ON contractor.contractorno = cleaninghistory.contractorno1]]></userDefinedSQL>
+<layoutSQL><![CDATA[<?xml version = '1.0' encoding = 'UTF-8'?>
+<ActiveQueryBuilderLayout><SQL>Select CleaningHistory.ResortID, CleaningHistory.CabinNo, CleaningHistory.DateTimeCleaned, CleaningHistory.ContractorNo, CleaningHistory.ActualCabinCleaningTime, Contractor.ContractRate, CleaningHistory.DateTimeCleaned * Contractor.ContractRate As ActualCabinCleaningTime From CleaningHistory Inner Join Contractor On Contractor.ContractorNo = CleaningHistory.ContractorNo1</SQL><SubQueries><SubQuery SQL="Select CleaningHistory.ResortID, CleaningHistory.CabinNo, CleaningHistory.DateTimeCleaned, CleaningHistory.ContractorNo, CleaningHistory.ActualCabinCleaningTime, Contractor.ContractRate, CleaningHistory.DateTimeCleaned * Contractor.ContractRate As ActualCabinCleaningTime From CleaningHistory Inner Join Contractor On Contractor.ContractorNo = CleaningHistory.ContractorNo1"><UnionSubQuery><DataSource SQL="CleaningHistory" X="140" Y="0" Height="209" Width="140"/><DataSource SQL="Contractor" X="398" Y="44" Height="119" Width="140"/></UnionSubQuery></SubQuery></SubQueries></ActiveQueryBuilderLayout>]]></layoutSQL>
+<parsed>true</parsed>
+<viewType>EntityView</viewType>
+<usedContainers>
+<container containerID="30A22AC1-82E9-C73A-BCF9-17879BCC934D"/>
+<container containerID="59A6B98E-4509-3C4F-ED93-EBF1926D3669"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ResortID" id="9E52D1FA-B4B3-E6F9-D286-42E367D732F0">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:53:42 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<reference>false</reference>
+<referencedColumn>5EFA3E84-F855-D363-D3F8-084B337E8DB8</referencedColumn>
+<table>30A22AC1-82E9-C73A-BCF9-17879BCC934D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CabinNo" id="F20E11B3-C0E1-046C-D7EF-54015D166161">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:53:42 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<reference>false</reference>
+<referencedColumn>1ED0D145-7F42-C032-105A-EB03AC081FB2</referencedColumn>
+<table>30A22AC1-82E9-C73A-BCF9-17879BCC934D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DateTimeCleaned" id="9370CB7C-72D8-9E8A-E21F-4DF8B58C0DF7">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:53:42 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<reference>false</reference>
+<referencedColumn>3AED1A89-6776-0767-2B12-0DAC0823D2CB</referencedColumn>
+<table>30A22AC1-82E9-C73A-BCF9-17879BCC934D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ContractorNo" id="0847EA88-5FB2-76B4-41CC-C7FFF4FC3BFF">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:53:42 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<reference>false</reference>
+<referencedColumn>4D0C6EAF-8B72-F93F-DF9C-00A8B2800FAD</referencedColumn>
+<table>30A22AC1-82E9-C73A-BCF9-17879BCC934D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ActualCabinCleaningTime" id="6D0978B7-10AE-DAD9-1B6A-3AC3261B84CD">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:53:42 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<reference>false</reference>
+<referencedColumn>5D7D0FC6-E8D3-DFD8-A310-B76A0B779FD9</referencedColumn>
+<table>30A22AC1-82E9-C73A-BCF9-17879BCC934D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ContractRate" id="ACB82E1E-B126-E718-3B60-433464E52861">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:53:42 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<reference>false</reference>
+<referencedColumn>2B61F47A-9D66-A783-ACB7-88A7256E0B01</referencedColumn>
+<table>59A6B98E-4509-3C4F-ED93-EBF1926D3669</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CabinCleaningCharge" id="6D62C888-B61E-A962-0CA0-1AEE00B1173B">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:53:42 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CabinCleaningCharge</alias>
+<dataType>NUMBER</dataType>
+<expression>CleaningHistory.DateTimeCleaned * Contractor.ContractRate / 60</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="30A22AC1-82E9-C73A-BCF9-17879BCC934D">
+<container>true</container>
+<tableName>CleaningHistory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="59A6B98E-4509-3C4F-ED93-EBF1926D3669">
+<container>true</container>
+<tableName>Contractor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5EFA3E84-F855-D363-D3F8-084B337E8DB8">
+<columnName>ResortID</columnName>
+<tableName>CleaningHistory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1ED0D145-7F42-C032-105A-EB03AC081FB2">
+<columnName>CabinNo</columnName>
+<tableName>CleaningHistory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3AED1A89-6776-0767-2B12-0DAC0823D2CB">
+<columnName>DateTimeCleaned</columnName>
+<tableName>CleaningHistory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4D0C6EAF-8B72-F93F-DF9C-00A8B2800FAD">
+<columnName>ContractorNo</columnName>
+<tableName>CleaningHistory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5D7D0FC6-E8D3-DFD8-A310-B76A0B779FD9">
+<columnName>ActualCabinCleaningTime</columnName>
+<tableName>CleaningHistory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2B61F47A-9D66-A783-ACB7-88A7256E0B01">
+<columnName>ContractRate</columnName>
+<tableName>Contractor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0F242343-746E-BA31-EA4E-BBB16FCED211">
+<columnName>ContractorNo</columnName>
+<tableName>Contractor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3098331F-1FA0-8AA7-0395-0A6DDF477D7D">
+<columnName>ContractorNo1</columnName>
+<tableName>CleaningHistory</tableName>
+</UsedObject>
+</usedObjects>
+</EntityView>

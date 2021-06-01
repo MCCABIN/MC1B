@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30A22AC1-82E9-C73A-BCF9-17879BCC934D" name="CleaningHistory">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:08 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ResortID" id="5EFA3E84-F855-D363-D3F8-084B337E8DB8">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:08 UTC</createdTime>
+<comment><![CDATA[ will hold one id]]></comment>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CabinNo" id="1ED0D145-7F42-C032-105A-EB03AC081FB2">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:08 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateTimeCleaned" id="3AED1A89-6776-0767-2B12-0DAC0823D2CB">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:08 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ContractorNo" id="4D0C6EAF-8B72-F93F-DF9C-00A8B2800FAD">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:08 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ActualCabinCleaningTime" id="5D7D0FC6-E8D3-DFD8-A310-B76A0B779FD9">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:08 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ResortID1" id="9A305CC7-87C2-A81D-C3C0-940299F098A5">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:42 UTC</createdTime>
+<comment><![CDATA[ will hold one id]]></comment>
+<generatorID>7EA5316A-8A38-48D8-A9E4-80859AF2C602</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<referedAttribute>82B09488-BDB1-6B4E-A698-50524D66E85B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CabinNo1" id="26E4DFF6-EF83-E4B1-B580-39E9EC5D7AD5">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:42 UTC</createdTime>
+<generatorID>7EA5316A-8A38-48D8-A9E4-80859AF2C602</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<referedAttribute>D9BA36C8-5E0E-6993-98A2-31AE5E28BD44</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ContractorNo1" id="3098331F-1FA0-8AA7-0395-0A6DDF477D7D">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:53 UTC</createdTime>
+<generatorID>19614EA9-E694-6BC7-E5F0-D363A59BFE40</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<referedAttribute>0F242343-746E-BA31-EA4E-BBB16FCED211</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ResortID  " id="9E608F2C-FB8D-9117-F2D2-2F763CCD92B8">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:59 UTC</createdTime>
+<generatorID>F698D2C4-D9D1-6E86-2758-C57E29E5F26C</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<referedAttribute>938A9568-2DCE-105C-F558-B0F0F640AA28</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="88693D05-FA90-6F74-0911-3F959F94AC7F" name="Cleaning History PK">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 14:48:08 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
+<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5EFA3E84-F855-D363-D3F8-084B337E8DB8</attributeRef>
+<attributeRef>1ED0D145-7F42-C032-105A-EB03AC081FB2</attributeRef>
+<attributeRef>3AED1A89-6776-0767-2B12-0DAC0823D2CB</attributeRef>
+<attributeRef>4D0C6EAF-8B72-F93F-DF9C-00A8B2800FAD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

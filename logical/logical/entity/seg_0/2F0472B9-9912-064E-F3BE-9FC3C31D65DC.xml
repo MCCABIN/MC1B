@@ -147,34 +147,6 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Street" id="E0C5232B-272E-35A1-7716-54636B208160">
-<createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 12:37:38 UTC</createdTime>
-<generatorID>B9B25255-6178-A357-98AC-A91B6EDFC0C7</generatorID>
-<ownerDesignName>logical</ownerDesignName>
-<engineerTo>
-<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
-<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>4A0B7690-7B2C-242C-FD43-1B780CC9D26B</referedAttribute>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Town" id="43292634-41C8-597D-E14D-ECFBAA6EE981">
-<createdBy>KOIF</createdBy>
-<createdTime>2021-06-01 12:37:38 UTC</createdTime>
-<generatorID>B9B25255-6178-A357-98AC-A91B6EDFC0C7</generatorID>
-<ownerDesignName>logical</ownerDesignName>
-<engineerTo>
-<item key="6C9AE13D-3040-F554-5B88-550CA916DE0A" value="true"/>
-<item key="7E35A9FB-7E14-8EF2-7B66-BFAC73E57CF0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>D3F4E59E-EF9A-C494-CA61-7A13B90224F6</referedAttribute>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D132F0A2-49E5-22E7-1E11-6480073A0469" name="Cleaning History PK">

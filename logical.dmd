@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="logical" id="4DA77115-A9D4-C9A0-A083-7537BD3C301A" version="3.5">
+<createdBy>KOIF</createdBy>
+<createdTime>2021-06-01 10:09:56 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4DA77115-A9D4-C9A0-A083-7537BD3C301A</designId>
+</OSDM_Design>
